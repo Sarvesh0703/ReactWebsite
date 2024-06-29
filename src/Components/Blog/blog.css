@@ -1,0 +1,84 @@
+/* Colors */
+:root {
+    --PrimaryColor: rgb(255, 115, 0);
+    --HoverColor: rgb(197, 89, 0);
+    --whiteColor: #fff;
+    --blackColor: #000000;
+    --textColor: grey;
+    --whiteColorDeam: #f0f0f0;
+    --greyBg: rgb(225 225 225);
+    /* --greyText: rgb(168 168 168); */
+    --greyText: #343d53;
+    --inputColor: rgb(235 235 235);
+    /* --box-shadow: 0 2px 8px 2px rgb(178, 178, 178, 0.189); */
+}
+
+.blog {
+    .mainContent {
+        gap: 1rem;
+
+        .singlePost {
+            gap: 2rem;
+
+            .imgDiv {
+                width: 100%;
+                height: 200px;
+                border-radius: 1rem;
+                box-shadow: 0 2px 8px 2px rgb(178, 178, 178, 0.406);
+                border: 5px solid var(--greyBg);
+                overflow: hidden;
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                        transition: .3s ease;
+                    }
+                }
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .postDetails {
+                h3 {
+                    color: var(--blackColor);
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    color: var(--textColor);
+                    font-size: 13px;
+                }
+            }
+
+            a {
+                color: var(--PrimaryColor);
+                font-size: 15px;
+                font-weight: 500;
+                width: max-content;
+                padding-top: .5rem;
+
+                &:hover {
+                    color: var(--HoverColor);
+                    font-weight: 600;
+
+                    .icon {
+                        transform: translateX(10px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES ====================== */
+@media screen and (min-width: 884px) {
+    .blog{
+        .mainContent{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

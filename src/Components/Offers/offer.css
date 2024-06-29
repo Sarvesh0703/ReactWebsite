@@ -1,0 +1,127 @@
+/* Colors */
+:root {
+    --PrimaryColor: rgb(255, 115, 0);
+    --HoverColor: rgb(197, 89, 0);
+    --whiteColor: #fff;
+    --blackColor: #000000;
+    --textColor: grey;
+    --whiteColorDeam: #f0f0f0;
+    --greyBg: rgb(233, 233, 233);
+    /* --greyText: rgb(168 168 168); */
+    --greyText: #343d53;
+    --inputColor: rgb(235 235 235);
+    --box-shadow: 0 2px 8px 2px rgb(178, 178, 178, 0.189);
+}
+
+.offer {
+    .secContainer {
+        .mainContent {
+            gap: 1rem;
+
+            .singleOffer {
+                border-radius: 1rem;
+                overflow: hidden;
+                padding: .5rem;
+                box-shadow: 0 2px 8px 2px rgb(178, 178, 178, 0.189);
+                transition: .5s ease;
+
+                .icon {
+                    font-size: 20px;
+                    color: var(--textColor);
+                }
+
+                small {
+                    font-weight: 500;
+                    color: var(--textColor);
+                }
+
+                .destImage {
+                    position: relative;
+                    height: 200px;
+                    width: 100%;
+                    border-radius: 1rem;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                    }
+
+                    .discount {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        padding: 5px 10px;
+                        background: var(--PrimaryColor);
+                        color: var(--whiteColor);
+                        border-radius: 2rem;
+                        font-size: 10px;
+                        font-weight: 500;
+                    }
+                }
+
+                .offerBody {
+                    padding: 1rem;
+
+                    .price {
+                        justify-content: space-between;
+
+                        h4 {
+                            color: var(--blackColor);
+                            font-size: 1.1rem;
+                            font-weight: 700;
+                        }
+
+                        .status {
+                            padding: 5px 10px;
+                            color: var(--HoverColor);
+                            font-size: 10px;
+                            background-color: var(--greyBg);
+                            font-weight: 600;
+                            border-radius: 3rem;
+                        }
+                    }
+
+                    .amenities {
+                        width: 100%;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        padding: 1rem 0;
+                        gap: .5rem;
+
+                        .singleAmenity {
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            background-color: var(--greyBg);
+                            gap: .5rem;
+                        }
+                    }
+
+                    .btn {
+                        margin-top: 1rem;
+                        width: 100%;
+                        text-align: center;
+                        justify-content: center;
+                        padding: .6rem;
+                        color: var(--whiteColor);
+                        font-weight: 600;
+                        gap: .5rem;
+                        transition: .3s ease;
+
+                        &:hover {
+                            background: var(--HoverColor);
+                            color: var(--whiteColor);
+                        }
+
+                        .icon {
+                            color: var(--whiteColor);
+                        }
+                    }
+                }
+
+                &:hover {
+                    transform: translateY(-7px);
+                }
+            }
+        }
+    }
+}

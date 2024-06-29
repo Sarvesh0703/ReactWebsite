@@ -1,0 +1,247 @@
+/* Colors */
+:root {
+    --PrimaryColor: rgb(255, 115, 0);
+    --HoverColor: rgb(197, 89, 0);
+    --whiteColor: #fff;
+    --blackColor: #000000;
+    --textColor: grey;
+    --whiteColorDeam: #f0f0f0;
+    --greyBg: rgb(233, 233, 233);
+    /* --greyText: rgb(170, 168, 168); */
+    --greyText: #343d53;
+    --inputColor: rgb(207, 207, 207);
+    /* --box-shadow: 0 2px 8px 2px rgb(178, 178, 178, 0.334); */
+}
+
+.popular {
+    padding-top: 18rem;
+
+    .secContainer {
+        .secHeader {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+
+            .textDiv {
+                .secTitle {
+                    color: var(--blackColor);
+                    line-height: 1.5rem;
+                    padding-bottom: .5rem;
+                }
+
+                p {
+                    font-size: 13px;
+                    color: var(--textColor);
+                }
+            }
+
+            .iconsDiv {
+                gap: 0.5rem;
+
+                .icon {
+                    padding: .5rem;
+                    background: var(--textColor);
+                    border-radius: 50%;
+                    font-size: 2.5rem;
+
+                    &:hover {
+                        background: var(--blackColor);
+                        color: var(--whiteColor);
+                    }
+                }
+
+                .leftIcon {
+                    background: var(--blackColor);
+                    color: var(--whiteColor);
+
+                    &:hover {
+                        background: var(--greyText);
+                        color: var(--blackColor);
+                    }
+                }
+            }
+        }
+
+        .mainContent {
+            padding: 2rem 0;
+            gap: 1rem;
+
+            .singleDestination {
+                overflow: hidden;
+                border-radius: 1rem;
+                box-shadow: 0 2px 8px 2px rgb(178, 178, 178, 0.334);
+
+                .destImage {
+                    width: 100%;
+                    height: 200px;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .overlayInfo {
+                        position: absolute;
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 0;
+                        /* padding: 1rem 1.5rem; */
+                        justify-content: center;
+                        flex-direction: column;
+                        background: linear-gradient(rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.759));
+                        bottom: 0;
+                        width: 100%;
+                        /* height: 100%; */
+                        height: 0;
+                        overflow: hidden;
+
+                        h3 {
+                            color: var(--whiteColor);
+                            font-weight: 600;
+                        }
+
+                        p {
+                            color: var(--whiteColor);
+                            opacity: .7;
+                            font-size: 13px;
+                        }
+
+                        .icon {
+                            position: absolute;
+                            right: 10px;
+                            bottom: 10px;
+                            padding: .5rem;
+                            background: var(--PrimaryColor);
+                            font-size: 2.5rem;
+                            border-radius: 50%;
+                            color: var(--whiteColor);
+                            border: 1px solid transparent;
+                            transition: .3s ease;
+
+                            &:hover {
+                                background: var(--blackColor);
+                                border: 1px solid var(--PrimaryColor);
+                            }
+                        }
+                    }
+                }
+
+                .destFooter {
+                    padding: 1rem;
+
+                    .number {
+                        position: relative;
+                        font-size: 2rem;
+                        font-weight: 700;
+                        color: var(--blackColor);
+                        width: max-content;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background: var(--PrimaryColor);
+                            top: 45%;
+                            right: -150%;
+                            height: 5px;
+                            width: 45px;
+                            border-radius: 1rem;
+                        }
+                    }
+
+                    .destText {
+                        justify-content: space-between;
+
+                        h6 {
+                            color: var(--blackColor);
+                            font-size: 15px;
+                        }
+
+                        .flex {
+                            align-items: flex-start;
+                            font-weight: 600;
+                            font-size: 16px;
+                            transform: translateY(5px);
+
+                            .icon {
+                                color: var(--PrimaryColor);
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .overlayInfo {
+                        overflow: visible;
+                        padding: 1rem 1.5rem;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES ================== */
+@media screen and (min-width: 480px) {
+    .popular {
+        padding-top: 10rem;
+    }
+}
+
+
+@media screen and (min-width: 556px) {
+    .popular {
+        .secContainer {
+            .secHeader {
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .textDiv {
+                    text-align: start;
+                    max-width: 70%;
+                }
+
+                .iconsDiv {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .popular {
+        padding-top: 7rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .popular {
+        padding-top: 10rem;
+
+        .secContainer {
+            .secHeader {
+                .textDiv {
+                    .secTitle {
+                        font-size: 2.2rem;
+                        padding-bottom: .8rem;
+                    }
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .mainContent{
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.5rem;
+            }
+        }
+    }
+}
