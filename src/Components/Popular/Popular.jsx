@@ -1,11 +1,8 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import './popular.css'
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
 import { BsDot } from "react-icons/bs";
-
-import Aos from 'aos'
-import 'aos/dist/aos.css'
 
 // Import the Images =====================
 import img2 from '../../Assets/img2.jpg'
@@ -54,15 +51,15 @@ const Popular = () => {
   }, [])
 
   return (
-    <section data-aos="fade-up" className='popular section container'>
+    <section className='popular section container'>
       <div className="secContainer">
         <div className="secHeader flex">
-          <div data-aos="fade-right" data-aos-duration="2500" className="textDiv">
+          <div className="textDiv">
             <h2 className="secTitle">Popular Destination</h2>
             <p>From Historical circles to natural specteculars, come see the best of the world!</p>
           </div>
 
-          <div  data-aos="fade-left" data-aos-duration="2500" className="iconsDiv flex">
+          <div className="iconsDiv flex">
             <BsArrowLeft className='icon leftIcon' />
             <BsArrowRight className='icon' />
           </div>
