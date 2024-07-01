@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './blog.css'
 import { BsArrowRightShort } from "react-icons/bs";
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 // Import the Images =====================
 import img10 from '../../Assets/img10.jpg'
@@ -48,27 +51,27 @@ const Blog = () => {
     <section className="blog container section">
       <div className="secContainer">
         <div className="secIntro">
-          <h2 className="secTitle">
+          <h2 data-aos="fade-up" data-aos-duration="2000" className="secTitle">
             Our Blog?
           </h2>
-          <p>An insight to the incredible experience in the world.</p>
+          <p data-aos="fade-up" data-aos-duration="2500">An insight to the incredible experience in the world.</p>
         </div>
 
         <div className="mainContent grid">
           {
             Posts.map(({ id, postImage, title, desc }) => {
               return (
-                <div className="singlePost grid">
+                <div data-aos="fade-up" data-aos-duration="2000" className="singlePost grid">
                   <div className="imgDiv">
                     <img src={postImage} alt="{title}" />
                   </div>
 
                   <div className="postDetails">
-                    <h3>{title}</h3>
-                    <p>{desc}</p>
+                    <h3 data-aos="fade-up" data-aos-duration="3000">{title}</h3>
+                    <p data-aos="fade-up" data-aos-duration="4000">{desc}</p>
                   </div>
 
-                  <a href="#" className='flex'>Read More <BsArrowRightShort className="icon" /></a>
+                  <a data-aos="fade-up" data-aos-duration="4500" href="#" className='flex'>Read More <BsArrowRightShort className="icon" /></a>
                 </div>
               )
             })
