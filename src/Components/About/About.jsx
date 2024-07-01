@@ -1,8 +1,5 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import './about.css'
-
-import Aos from 'aos'
-import 'aos/dist/aos.css'
 
 // Import the Images =====================
 import img1 from '../../Assets/customer.png'
@@ -26,7 +23,7 @@ const About = () => {
         </h2>
 
         <div className="mainContent container grid">
-          <div data-aos="fade-up" data-aos-duration="2000" className="singleItem">
+          <div className="singleItem">
             <img src={img2} alt="Image Name" />
             <h3>100+ Mountains</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quo?
@@ -34,7 +31,7 @@ const About = () => {
             </p>
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="2500" className="singleItem">
+          <div className="singleItem">
             <img src={img3} alt="Image Name" />
             <h3>1000+ Hikings</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quo?
@@ -42,7 +39,7 @@ const About = () => {
             </p>
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="3000" className="singleItem">
+          <div className="singleItem">
             <img src={img1} alt="Image Name" />
             <h3>2000+ Customer</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quo?
@@ -53,11 +50,11 @@ const About = () => {
 
         <div className="videoCard container">
           <div className="cardContent grid">
-            <div data-aos="fade-right" data-aos-duration="2000" className="cardText">
+            <div className="cardText">
               <h2>Wonderful House experience nin there!</h2>
               <p>The Advantage subranking is based on an equally weighted average of scrores from five country.</p>
             </div>
-            <div data-aos="fade-left" data-aos-duration="2000" className="cardVideo">
+            <div className="cardVideo">
               <video src={video} autoPlay loop muted type="video.mp4"></video>
             </div>
           </div>
