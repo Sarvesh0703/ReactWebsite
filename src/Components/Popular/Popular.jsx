@@ -45,13 +45,11 @@ const Data = [
 ]
 
 const Popular = () => {
-
   return (
     <section className='popular section container'>
       <div className="secContainer">
         <div className="secHeader flex">
-          <div data-aos="fade-right" data-aos-duration="2500" className="textDiv">
-            <h2 className="secTitle">Popular Destination</h2>
+          <div className="textDiv">
             <p>From Historical circles to natural specteculars, come see the best of the world!</p>
           </div>
 

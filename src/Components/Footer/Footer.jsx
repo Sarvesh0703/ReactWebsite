@@ -7,6 +7,10 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
     <div className="footer">
       <div className="secContainer container grid">

@@ -202,11 +202,12 @@
     }
 }
 
+
 @media screen and (max-width: 350px) {
-    .home {
-        & .secContainer {
+    .home{
+        .secContainer{
             .homeCard {
-                bottom: -35%;
+                bottom: -25%;
             }
         }
     }
