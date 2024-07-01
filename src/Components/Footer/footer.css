@@ -22,7 +22,7 @@
         text-align: center;
 
         .footerLogo {
-            padding-bottom: .5rem;
+            padding-bottom: .8rem;
 
             .logo {
                 color: var(--blackColor);
@@ -33,7 +33,7 @@
 
                 .icon {
                     color: var(--PrimaryColor);
-                    font-size: 25px;
+                    font-size: 30px;
                     margin-right: .5rem;
                 }
             }

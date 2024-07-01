@@ -201,14 +201,3 @@
         }
     }
 }
-
-
-@media screen and (max-width: 350px) {
-    .home{
-        .secContainer{
-            .homeCard {
-                bottom: -25%;
-            }
-        }
-    }
-}

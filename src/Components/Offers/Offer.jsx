@@ -40,11 +40,6 @@ const Offers = [
 ]
 
 const Offer = () => {
-
-  useEffect(()=>{
-    Aos.init({duration: 2000})
-  }, [])
-
   return (
     <section className="offer container section">
       <div className="secContainer">

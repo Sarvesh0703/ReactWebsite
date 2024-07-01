@@ -13,7 +13,7 @@
     --PrimaryColor: rgb(255, 115, 0);
     --HoverColor: rgb(197, 89, 0);
     --whiteColor: #fff;
-    --blackColor: #000000;
+    --blackColor: #343d53;
     --textColor: grey;
     --whiteColorDeam: #f0f0f0;
     /* --greyBg: rgb(225 225 225); */
@@ -88,6 +88,7 @@ li {
 
 .secIntro .secTitle {
     color: var(--blackColor);
+    font-weight: 800;
     line-height: 1.5rem;
     padding-bottom: .5rem;
 }
@@ -127,7 +128,7 @@ video {
     }
 
     .section {
-        padding: 5rem 0.3rem;
+        padding: 2rem 0.3rem;
     }
 
     .secIntro {

@@ -3,7 +3,7 @@
     --PrimaryColor: rgb(255, 115, 0);
     --HoverColor: rgb(197, 89, 0);
     --whiteColor: #fff;
-    --blackColor: #000000;
+    --blackColor: #343d53;
     --textColor: grey;
     --whiteColorDeam: #f0f0f0;
     --greyBg: rgb(233, 233, 233);
@@ -26,6 +26,7 @@
                 .secTitle {
                     color: var(--blackColor);
                     line-height: 1.5rem;
+                    font-weight: 800;
                     padding-bottom: .5rem;
                 }
 
