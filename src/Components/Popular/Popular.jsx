@@ -50,7 +50,6 @@ const Popular = () => {
       <div className="secContainer">
         <div className="secHeader flex">
           <div className="textDiv">
-            <h2 className="secTitle">Popular Destination</h2>
             <p>From Historical circles to natural specteculars, come see the best of the world!</p>
           </div>
 
