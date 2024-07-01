@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import './about.css'
 
 // Import the Images =====================
@@ -6,18 +6,10 @@ import img1 from '../../Assets/customer.png'
 import img2 from '../../Assets/maountain.png'
 import img3 from '../../Assets/climbing.png'
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-
 // Import the Video Images =====================
 import video from '../../Assets/video.mp4'
 
 const About = () => {
-
-  useEffect(()=>{
-    Aos.init({duration: 2000})
-  }, [])
-
   return (
     <section className="about section">
       <div className="secContainer">
@@ -26,7 +18,7 @@ const About = () => {
         </h2>
 
         <div className="mainContent container grid">
-          <div data-aos="fade-up" data-aos-duration="2000" className="singleItem">
+          <div className="singleItem">
             <img src={img2} alt="Image Name" />
             <h3>100+ Mountains</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quo?
@@ -34,7 +26,7 @@ const About = () => {
             </p>
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="2500" className="singleItem">
+          <div className="singleItem">
             <img src={img3} alt="Image Name" />
             <h3>1000+ Hikings</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quo?
@@ -42,7 +34,7 @@ const About = () => {
             </p>
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="3000" className="singleItem">
+          <div className="singleItem">
             <img src={img1} alt="Image Name" />
             <h3>2000+ Customer</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quo?
