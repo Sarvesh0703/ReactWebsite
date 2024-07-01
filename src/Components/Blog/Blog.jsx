@@ -8,7 +8,6 @@ import img11 from '../../Assets/img11.jpg'
 import img12 from '../../Assets/img12.jpg'
 import img14 from '../../Assets/img14.jpg'
 
-
 const Posts = [
   {
     id: 1,
