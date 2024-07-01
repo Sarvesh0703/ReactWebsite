@@ -206,7 +206,7 @@
     .home {
         & .secContainer {
             .homeCard {
-                bottom: -35%;
+                bottom: -30%;
             }
         }
     }
