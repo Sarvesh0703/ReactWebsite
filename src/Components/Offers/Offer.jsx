@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './offer.css'
 import { MdKingBed } from "react-icons/md";
 import { MdBathtub } from "react-icons/md";
@@ -6,6 +6,9 @@ import { FaWifi } from "react-icons/fa";
 import { MdAirportShuttle } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import { BsArrowRightShort } from "react-icons/bs";
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 // Import the Images =====================
 import img4 from '../../Assets/img4.jpg'
@@ -46,7 +49,7 @@ const Offer = () => {
   }, [])
 
   return (
-    <section className="offer container section">
+    <section data-aos="fade-up" data-aos-duration="2000" className="offer container section">
       <div className="secContainer">
         <div className="secIntro">
           <h2 className="secTitle">
@@ -59,7 +62,7 @@ const Offer = () => {
           {
             Offers.map(({id, imgSrc, stTdeitle, location, price}) => {
               return (
-                <div className="singleOffer">
+                <div data-aos="fade-up" data-aos-duration="3000" className="singleOffer">
                   <div className="destImage">
                     <img src={imgSrc} alt={stTdeitle} />
                     <span className='discount'>30% Off</span>
