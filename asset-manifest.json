@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ReactWebsite/static/css/main.aa280828.css",
+    "main.js": "/ReactWebsite/static/js/main.c7f9605d.js",
+    "static/media/video.mp4": "/ReactWebsite/static/media/video.9e9864399f74addf8d18.mp4",
+    "static/media/map.jpg": "/ReactWebsite/static/media/map.f87918c074f66f7e4473.jpg",
+    "static/media/img9.jpg": "/ReactWebsite/static/media/img9.5a3ff48431ca6ac1297e.jpg",
+    "static/media/img12.jpg": "/ReactWebsite/static/media/img12.74b8c57b905e56a34b5c.jpg",
+    "static/media/img11.jpg": "/ReactWebsite/static/media/img11.da80e5f67ce017a289c5.jpg",
+    "static/media/img10.jpg": "/ReactWebsite/static/media/img10.5d05821c69635f0013d2.jpg",
+    "static/media/img2.jpg": "/ReactWebsite/static/media/img2.b8843d0f8de9a8caac43.jpg",
+    "static/media/img4.jpg": "/ReactWebsite/static/media/img4.6dbbace4b8e69d5f79f0.jpg",
+    "static/media/img5.jpg": "/ReactWebsite/static/media/img5.5dc4d74534b8d8131fd8.jpg",
+    "static/media/img7.jpg": "/ReactWebsite/static/media/img7.02a00aa4d93efa0f1537.jpg",
+    "static/media/img6.jpg": "/ReactWebsite/static/media/img6.6e17b03722116e7d1cbe.jpg",
+    "static/media/img14.jpg": "/ReactWebsite/static/media/img14.4bacee46e8108826c0e9.jpg",
+    "static/media/img1.jpg": "/ReactWebsite/static/media/img1.a656e32afb2562cba7d2.jpg",
+    "static/media/climbing.png": "/ReactWebsite/static/media/climbing.cbad8edad94470cb7038.png",
+    "static/media/maountain.png": "/ReactWebsite/static/media/maountain.2236a2187aed593afe9d.png",
+    "static/media/customer.png": "/ReactWebsite/static/media/customer.431074a2c537eb8184bc.png",
+    "static/media/img3.jpeg": "/ReactWebsite/static/media/img3.2420de8a4124b6e7f8c4.jpeg",
+    "index.html": "/ReactWebsite/index.html",
+    "main.aa280828.css.map": "/ReactWebsite/static/css/main.aa280828.css.map",
+    "main.c7f9605d.js.map": "/ReactWebsite/static/js/main.c7f9605d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa280828.css",
+    "static/js/main.c7f9605d.js"
+  ]
+}
